@@ -1,0 +1,56 @@
+.notification {
+    position: fixed;
+    bottom: 30px;
+    right: 0%;
+    transform: translateX(-5%);
+    background-color: #41B06E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 2rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 1000;
+    
+    &.visible {
+      opacity: 1;
+      animation: slideIn 0.5s ease forwards;
+      -webkit-animation: slideIn 0.5s ease forwards;
+  }
+  
+    &.error {
+      background-color: #ff4d4f;
+    }
+  
+    .icon {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translate(-5%, 30px);
+  }
+    to {
+      opacity: 1;
+      transform: translate(-5%, 0);
+  
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    .notification {
+      transform: translateX(0%);
+      font-size: 1rem;
+
+      .icon {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }

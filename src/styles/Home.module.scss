@@ -1,0 +1,24 @@
+.container {
+  padding: 0 6rem;
+  
+  .main {
+    min-height: 100vh;
+    padding: 2rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1300px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    padding: 0;
+  }
+}
