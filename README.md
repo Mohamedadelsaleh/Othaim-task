@@ -28,21 +28,23 @@
 
 
 ## App-structure
-Othaim Ecommerce is a modern ecommerce application built with Next.js, TypeScript, and React Context API.
-src/
-├── pages/ # Next.js page routes
-│ ├── cart/
-│ ├── order-confirmation/
-│ └── ...
-├── components/ # Reusable components
-│ ├── Cart/
-│ ├── ProductCard/
-│ └── ...
-├── context/ # Global state management
-│ └── CartContext.tsx
-├── services/ # API services
-│ └── services.ts
-├── styles/ # Global styles
+Othaim Ecommerce is a modern e-commerce application built with Next.js, TypeScript, and React Context API.
+    
+    src/
+    ├── pages/ # Next.js page routes
+    │ ├── cart/
+    │ ├── order-confirmation/
+    │ └── ...
+    ├── components/ # Reusable components
+    │ ├── Cart/
+    │ ├── ProductCard/
+    │ └── ...
+    ├── context/ # Global state management
+    │ └── CartContext.tsx
+    ├── services/ # API services
+    │ └── services.ts
+    ├── styles/ # Global styles
+
 
 ## Setup
 
