@@ -9,7 +9,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
 [![Vercel Deployment](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat&logo=vercel)](https://othaim-task.vercel.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Test Coverage](https://img.shields.io/badge/coverage-85%25-green)](https://github.com/Mohamedadelsaleh/Othaim-task)
 
 ## Table of contents
