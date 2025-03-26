@@ -31,7 +31,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className={styles.cart}>
-      <h2>Shopping Cart</h2>
+      <h1>Shopping Cart</h1>
       {state.items.length === 0 ? (
         <p className={styles.emptyCart}>Your cart is empty</p>
       ) : (

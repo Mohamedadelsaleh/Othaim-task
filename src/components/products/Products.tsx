@@ -23,8 +23,6 @@ const Products: React.FC = () => {
       try {
         setLoading(true);
         const products = await getAllProducts();
-        console.log(products);
-        
         setProducts(products);
         setError(null);
       } catch (err) {
