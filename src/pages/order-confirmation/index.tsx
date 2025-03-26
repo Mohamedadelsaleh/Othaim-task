@@ -4,6 +4,7 @@ import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/router";
 import ConfirmationDialog from "@/components/ConfirmationDialog/ConfirmationDialog";
 import styles from "./OrderConfirmation.module.scss";
+import Link from "next/link";
 
 const OrderConfirmationPage: React.FC = () => {
   const { state, dispatch, showNotification } = useCart();
@@ -35,7 +36,15 @@ const OrderConfirmationPage: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Order Summary</h1>
+      <div className={styles.containerHead}>
+        <Link href="/cart" passHref>
+          <button className={styles.backButton}>
+            <img src="/assets/back.svg" alt="back" className={styles.backIcon} />
+            <span>Back</span>
+          </button>
+        </Link>
+        <h1>Order Summary</h1>
+      </div>
       <div className={styles.itemsContainer}>
         {state.items.map((item) => (
           <div key={item.id} className={styles.item}>

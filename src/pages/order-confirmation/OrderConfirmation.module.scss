@@ -5,6 +5,35 @@
   padding: 0 1rem;
   padding-top: 5rem;
 
+  .containerHead {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .backButton {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 300px;
+      background: #0070f3;
+
+      .backIcon {
+        width: 24px;
+        height: 24px;
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+
   .itemsContainer {
     margin: 2rem 0;
     display: flex;
@@ -68,10 +97,12 @@
   }
 }
 
-
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .container{
-    .total{
+  .container {
+    .containerHead {
+      gap: 16px;
+    }
+    .total {
       text-align: center;
     }
   }
